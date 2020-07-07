@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="info-item">
+           
+            <img src="./img/rocket.png" alt="Rocket" height="100">
+          <h1>Join Us</h1>
+          <p>
+            While you might strive to learn as much as you can about the world,
+            it is impossible to know everything.And more
+            importantly, you should be humble enough to look back at your
+            mistakes (and challenges) to evaluate the lessons that you learned
+            from them.
+          </p>
+          <button>Know More</button>
+        </div>
+
+        <div class="register-item">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <div class="register-info">
+                
+                <h1>Apply as an Employee</h1>
+                <form action="./php/contact.php" method="POST">
+                  <ul class="register-list">
+                    <li class="register-input">
+                      <input type="text" name="firstName" placeholder="First-Name" required/>
+                      <input type="text" name="lastName" placeholder="Last-Name" required/>
+                    </li>
+                    <li class="register-input">
+                      <input type="text" name="address" placeholder="Address" required/>
+                      <input type="tel" name="phone" placeholder="Your Phone"
+                        pattern="[0-9]{2}-[0-9]{8}" required/>
+                    </li>
+      
+                    <li class="register-input">
+                      <input type="email" name="email" placeholder="E-mail" required/>
+                      <input type="password" name="password" placeholder="Password" required/>
+                    </li>
+      
+                    <li class="register-select">
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">Female</label>
+                      <input type="radio" id="other" name="gender" value="other">
+                      <label for="other">Other</label>
+                    </li>
+                  </ul>
+                  
+      
+                  <input type="submit" id="submit" name="submit" value="Sign Up" />
+                </form>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
